@@ -1,0 +1,784 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    /* overflow: hidden; */
+    padding: 0;
+    /* background-color: rgba(209, 144, 23, 0.836); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    position: fixed;
+}
+.menu{
+    margin-top: -10px;
+    position: fixed;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgb(216, 149, 3);
+    /* float: right; */
+    overflow: hidden;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.menu a:hover{
+    font-weight: 500;
+    color: rgb(10, 68, 65);
+    transition: all ease-in-out .3s;
+    padding: 0;
+}
+ 
+.logo{
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    margin: 5px;
+    margin-top: 15px;
+    border-bottom: 1px solid teal;
+    margin-left: 25px;
+    border-radius: 50%;
+    float: left;
+}
+
+.icon{
+    font-size: 24px;
+    position: fixed;
+    margin-left: 95%;
+    display: none;
+    color: white;
+    /* margin-top: -10px; */
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px soldi white;
+}
+
+/* this part is for side bar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+#main{
+    transition: all .6s;
+}
+.sidemenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    background-color: rgb(206, 145, 95);
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all .5s;
+    /* float: right; */
+    /* padding-left: 300px; */
+}
+.sidemenu a{
+    margin-top: 10px;
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    font-weight: 500;
+    color: white;
+}
+.sidemenu a:hover{
+    color: white;
+    font-weight: bold;
+}
+.sidemenu .icon1{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+    cursor: pointer;
+    /* float: right; */
+    /* border: 1px solid white; */
+}
+.logo1{
+    width: 110px;
+    height: 110px;
+    top: 0;
+    margin-left: 15px;
+    margin-top: -90px;
+    border-radius: 50%;
+    /* float: left; */
+}
+
+
+/* this part is body part */
+
+.left{
+    width: 25%;
+        margin: 10px;
+    margin-top: 140px;
+    padding: 5px;
+    border: 1px solid goldenrod;
+    float: left;
+}
+.center{
+    width: 46%;
+    margin: 10px;
+    margin-top: 130px;
+    border: 1px solid goldenrod;
+    padding: 5px;
+    float: left;
+}
+.right{
+    width: 25%;
+    margin: 10px;
+    margin-top: 120px;
+    padding: 5px;
+    border: 1px solid goldenrod;
+    float: left;
+}
+
+.pictures{
+    width: 100%;
+    height: 242px;
+    padding: 7px;
+}
+/* this part is for the bob up message */
+.full-message{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    z-index: 100;
+    justify-content: center;
+}
+#fullMess{
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 15px;
+    font-family:  'Tahoma', Geneva, Verdana, sans-serif;
+}
+#fullMess h3{
+    width: 130px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-bottom: 2px solid whitesmoke;
+    background-color: goldenrod;
+}
+#fullMess p{
+    color: rgb(184, 136, 6);
+    text-align: justify;
+}
+.bobhr{
+    margin-left: 5px;
+    margin-top: -20px;
+    color: goldenrod;
+    height: 2px;
+    background-color: goldenrod;
+}
+.full-message img{
+    width: 90%;
+    max-width: 500px;
+}
+.full-message span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+/* this is part is common part */
+h1{
+    background-color: rgb(206, 145, 95);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: justify;
+    font-size: 22px;
+}
+.hr{
+    margin-top: 10px;
+        background-color: rgb(206, 145, 95);
+    height: 1px ;
+}
+p{
+    font-size: 14px;
+    text-align: justify;
+    padding: 3px;
+}
+h3{
+    font-size: 16px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: seashell;
+    margin-left: 50px;
+}
+
+/* this part is for left side */
+#form{
+    width: 100%;
+    text-align: left;
+    margin-left: px;
+    padding: 5px;
+    
+}
+label{
+    font-weight: 500;
+    color: rgb(3, 20, 3);
+}
+form input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: 1px solid rgb(194, 138, 54);
+}
+.button{
+    width: 90px;
+    float: right;
+    margin: 10px;
+    padding: 7px;
+    /* margin: 5px; */
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(209, 144, 23, 0.836);
+}
+.button a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+button:hover{
+    font-weight: bold;
+    background-color: rgb(206, 145, 95);
+}
+.ali{
+    background-color: rgb(224, 186, 88);
+}
+/* this is for the news page */
+   .gallery{
+     width: 98%;
+    margin: 10px;
+    margin-top: 120px;
+    padding: 5px;
+    /* border: 1px solid goldenrod; */
+    float: left;
+    overflow-x: hidden;
+}
+.gallery img{
+    transition: .5s;
+    box-shadow: 3px;
+}
+.gallery img:hover{
+    
+    transition: .5s;
+    transform: scale(0.8) rotate(-1deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+    /* overflow: hidden; */
+}
+.full-image{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    z-index: 100;
+    justify-content: center;
+}
+.full-image img{
+    width: 90%;
+    max-width: 500px;
+}
+.full-image span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.gt{
+    border-radius: 20px;
+    background: tomato;
+    padding: 5px;
+    width: 90px;
+    /* border: 1px solid white; */
+    margin-top: 15%;
+    left: 5%;
+}
+.lt{
+    border-radius: 20px;
+    background: tomato;
+    padding: 5px;
+    width: 150px;
+    /* border: 1px solid white; */
+    margin-top: 15%;
+    right: 5%;
+}
+.gt, .lt{
+    display: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+}
+/* this part is for the about section */
+.left1, .right1, .left2{
+    width: 45%;
+        margin: 10px;
+    margin-top: 170px;
+    padding: 5px;
+    /* border: 1px solid goldenrod; */
+    float: left;
+}
+
+.left1 {
+    width: 50%;
+    height: 450px;
+    border-radius: 15px;
+    border: none;
+}
+.left1 img{
+    border-radius: 4px;
+    width: 100%;
+}
+.left2 {
+    width: 50%;
+    height: 450px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 1px;
+}
+.left2 img{
+    margin: 10px;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: rgba(226, 213, 185, 0.932);
+}
+.righ1{
+    width: 40%;
+    float: left;
+    border: none;
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color: rgba(161, 136, 110, 0.932);
+
+}
+
+.righ1:hover{
+
+    background-color: rgba(179, 164, 132, 0.932);
+}
+.right1 h3{
+    font-size: 28px;
+    color: darkgoldenrod;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1px ;
+}
+.right1 p{
+    text-align: justify;
+    padding: 9px;
+    color: rgb(2, 2, 65);
+    font-size: 18px;
+}
+
+/* this part is for the contact page */
+    .bidix, .dhexe, .midig{
+        float: left;
+        /* width: 98%; */
+        left: 5%;
+        border: 1px solid rgb(212, 176, 176);
+        margin: 10px;
+        /* margin-top: 1000px; */
+        /* display: inline-block; */
+        padding: 20px;
+        text-align: center;
+    }
+    .Cbutton1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+        background-color: rgb(194, 127, 3);
+        padding: 10px;
+        border: none;
+        font-weight: 459;
+        font-size: 18px;
+        border-radius: 15px;
+    }
+    .Cbutton1 a{
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    .Cbutton{
+        font-size: 18px;
+        width: 70%;
+        background-color: rgb(191, 194, 3);
+        padding: 5px;
+        border: none;
+        border-radius: 15px;
+    }
+    .Cbutton a{
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    .Cbutton a:hover{
+        border: none;
+        /* background-color: gold; */
+    }
+ 
+    .bidix{
+        font-size: 22px;
+        border-top: 7px solid rgb(146, 56, 14);
+        margin-left: 30px;
+        float: left;
+        width: 25%;
+        margin-top: 190px;
+    }
+    .dhexe{
+        font-size: 22px;
+        border-top: 7px solid rgb(214, 159, 7);
+        width: 40%;
+        /* margin-top: 120px; */
+    }
+    .midig{
+        font-size: 22px;
+        border-top: 7px solid rgb(197, 69, 10);
+        background-color: aliceblue;
+        /* margin-top: 190px; */
+        width: 25%;
+    }
+    .dhexe, .midig{
+        margin-top: 30px;
+    }
+
+/* footer */
+footer{
+    width: 100%;
+    margin-top: 70px;
+    float: left;
+    background-color: rgba(179, 119, 8, 0.836);
+}
+.footer-head{
+    float: left;
+}
+.footerpic{
+    width: 65px;
+    height: 65px;
+    margin-top: 3px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+/* media screen or breakpoints */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    form, .extrasmalldeviceshidden, .hr{
+        display: none;
+        
+    }
+   .gallery img:hover{
+    
+    transition: .5s;
+    transform: scale(1);
+    /* overflow: hidden; */
+}
+    .left, .center, .right{
+        width: 95%;
+        display: block;
+        margin-top: 90px;
+        border: none;
+        padding: 7px;
+        border: 1px solid goldenrod;
+        overflow-x: hidden !important;
+    }
+    .left{
+        margin-top: 50px;
+    }
+    .left h1{
+        margin-top: 0px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+    }
+   
+    .pictures{
+        width: 100%;
+        height: 350px;
+    }
+
+    /* header part */
+    .menu{
+        padding: 25px;
+        margin-top: -10px;
+    }
+    .menu a{
+        display: none;
+    }
+    .logo{
+        /* display: none; */
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 15px;
+        border-bottom: turquoise;
+        border: 1px solid rgb(245, 250, 250);
+        float: right;
+    }
+    .icon{
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    padding: 4px;
+    margin-top: 0px;
+    margin-left: 85%;
+    display: block;
+}
+    .footer-head{
+        text-align: center;
+        margin-right: 10px;
+        float: none;
+        
+    }
+   .footerpic{
+       display: none;
+   } 
+   /* .gallery{
+     width: 98%;
+    margin: 10px;
+    margin-top: 120px;
+    padding: 5px;
+    border: 1px solid goldenrod;
+    float: left;
+    overflow-x: hidden;
+} */
+
+    /* .closebtn{
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    padding: 4px;
+    margin-top: 0px;
+    margin-left: 85%;
+    display: block;
+} */
+
+/* this part is for the about section */
+.left1, .right1, .left2{
+    width: 95%;
+    display: block;
+    /* overflow: hidden; */
+    border: none;
+}
+.left1 img{
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: rgba(124, 73, 73, 0.9);
+}
+.left2 img{
+    margin: 10px;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: rgba(226, 213, 185, 0.932);
+}
+.right1{
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: rgba(226, 213, 185, 0.932);
+}
+.right1 h3{
+    font-size: 24px;
+    color: darkgoldenrod;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 1px ;
+}
+.right1 p{
+    text-align: justify;
+    padding: 9px;
+    color: rgb(2, 2, 65);
+    font-size: 18px;
+}
+
+/* this part is for the contact page */
+    .bidix{
+        width: 90%;
+    }
+    .dhexe{
+        width: 90%;
+        margin-left: 35px;
+        /* margin-top: -30px; */
+    }
+    .midig{
+        width: 90%;
+        margin-left: 35px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .left{
+        display: none;
+    }
+    .center{
+        width: 56%;
+    }
+    .right{
+        width: 35%;
+    }
+    .hidedintablet{
+        display: none;
+    }
+    .menu{
+        padding: 20px;
+        margin-top: 0px;
+    }
+    .menu a{
+        display: none;
+    }
+    .icon{
+        position: fixed;
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+        margin-left: 90%;
+    }
+    .logo{
+        display: block;
+        width: 80PX;
+        height: 80px;
+    }
+    .gallery{
+        border: none;
+    }
+    .gallery h1{
+        text-align: center;
+        /* width: 25%;
+        border-bottom: 2px solid goldenrod;
+        border-width: 100%; */
+    }
+  .gallery img{
+      display: inline-block;
+     width: 23%;
+    margin: 10px;
+    /* margin-top: 120px; */
+    padding: 5px;
+    overflow-x: hidden;
+
+    /* this part is for the about page */
+}
+
+   .left1, .right1, .left2{
+    width: 40%;
+    display: inline-block;
+    /* overflow: hidden; */
+    border: none;
+}
+.left1 img{
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: rgba(124, 73, 73, 0.9);
+}
+.left2 img{
+    margin: 10px;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: rgba(226, 213, 185, 0.932);
+}
+.right1{
+    width: 50%;
+    margin-top: 180px;
+    margin-left: 30px;
+    border-radius: 15px;
+    background-color: rgba(226, 213, 185, 0.932);
+}
+.right1 h3{
+    /* margin-top: 190px; */
+    font-size: 24px;
+    color: darkgoldenrod;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 1px ;
+}
+.right1 p{
+    text-align: justify;
+    padding: 9px;
+    color: rgb(2, 2, 65);
+    font-size: 18px;
+}
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .hidedintablet{
+        display: block;
+    }
+        
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .left{
+        /* float: right; */
+        width: 25%;
+        display: block;
+    }
+    .center{
+        /* float: right; */
+        width: 45%;
+    }
+    .right{
+        width: 25%;
+        /* float: left; */
+    }
+    .menu a{
+        display: inline-block;
+    }
+   .icon{
+       display: none;
+   }
+
+   
+   
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
